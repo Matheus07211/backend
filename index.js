@@ -2,7 +2,7 @@ import Evento from "./Modelo/evento.js";
 
 
 const evento = new Evento(0,
-    "Lolapalloza", "Rua das Larangeiras, 213",
+    "Lolapalloza", "Rua dos Estados, 171",
     "São Paulo", "SP", 30.00, new Date());
 
 evento.gravar().then(() =>{
