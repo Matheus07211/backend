@@ -3,14 +3,14 @@ import mysql from "mysql2/promise";
 
 
 export default async function conectar () {
-    if (global.pool !== underfined) {
+    if (global.pool !== undefined) {
         return await global.pool.getConnection();
     }
     else{ 
         const pool = mysql.createPool({
             host: 'localhost',
             user: 'root',
-            password:  '', 
+            password:  '17082000', 
             port: 3306,           
             database: 'backend',
             waitForConnections: true,
@@ -22,7 +22,7 @@ export default async function conectar () {
             keepAliveInitialDelay: 0,
       });  
       
-      global.pool = poll;
+      global.pool = pool;
       return await pool.getConnection();
     }
 }
