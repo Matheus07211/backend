@@ -5,6 +5,7 @@ const rotaEvento = new Router();
 const eveCtrl = new eventoCtrl();
 
 rotaEvento
+.get('/', eveCtrl.consultar)
 .get('/:termo', eveCtrl.consultar)
 .post('/', eveCtrl.gravar)
 .put('/:codigo', eveCtrl.atualizar)

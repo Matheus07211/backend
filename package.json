@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Matheus07211/backend#readme",
   "dependencies": {
+    "express": "^4.19.2",
     "mysql2": "^3.9.2"
   }
 }
